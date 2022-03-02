@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <title>To Do List</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body data-theme="light">
+  <div class="container">
+    <header>
+      <h1>TODO</h1>
+      <img id="theme" src="./images/icon-moon.svg" alt="go to other theme" />
+    </header>
+
+    <main>
+      <div class="add-new-to-do item-container">
+        <input type="checkbox" class="checkbox new-to-do">
+        <span class="new-checkbox"></span>
+        <input type="text" id="new-to-do" placeholder="Create a new to-do..">
+      </div>
+      <ul class="to-do-list">
+      </ul>
+      <div class=" infos item-container">
+        <div class="items-left">
+          <p id="items-left">N items left</p>
+        </div>
+        <div class="exibition">
+          <p id="all" class="color-blue">All</p>
+          <p id="active">Active</p>
+          <p id="completed">Completed</p>
+        </div>
+        <div>
+          <p class="clear-completed">Clear completed</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Drag and drop to reorder list</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </div>
+
+</body>
+
+</html>
